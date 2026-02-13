@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modo Urbano 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="galeria">
+        <div class="flyer-container"><span class="badge">1</span><img src="1.jpg" alt="Flyer 1"></div>
+        <div class="flyer-container"><span class="badge">2</span><img src="2.jpg" alt="Flyer 2"></div>
+        <div class="flyer-container"><span class="badge">3</span><img src="3.jpg" alt="Flyer 3"></div>
+        <div class="flyer-container"><span class="badge">4</span><img src="4.jpg" alt="Flyer 4"></div>
+        <div class="flyer-container"><span class="badge">5</span><img src="5.jpg" alt="Flyer 5"></div>
+        <div class="flyer-container"><span class="badge">6</span><img src="6.jpg" alt="Flyer 6"></div>
+        <div class="flyer-container"><span class="badge">7</span><img src="7.jpg" alt="Flyer 7"></div>
+    </main>
+
+    <audio id="miMusica" loop>
+        <source src="musica.mp3" type="audio/mpeg">
+    </audio>
+
+    <footer></footer>
+
+    <script>
+        // La música inicia cuando el usuario toca cualquier parte de la pantalla
+        document.addEventListener('click', function() {
+            var audio = document.getElementById("miMusica");
+            audio.play();
+        }, { once: true });
+    </script>
+
+</body>
+</html>

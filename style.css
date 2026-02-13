@@ -1,0 +1,58 @@
+/* Configuración General */
+body {
+    background-color: #050505; /* Fondo negro */
+    margin: 0;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor de la Galería */
+.galeria {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Contenedor de cada Flyer */
+.flyer-container {
+    position: relative;
+    width: 100%;
+}
+
+.flyer-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.8);
+}
+
+/* Iconos de numeración (Negro con número Blanco) */
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #000000; /* Fondo Negro */
+    color: #ffffff;            /* Número Blanco */
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    z-index: 10;
+    border: 2px solid #ffffff; /* Borde blanco para resaltar */
+}
+
+/* Espacio final */
+footer {
+    height: 50px;
+}
